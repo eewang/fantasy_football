@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 Player Details
+  p Name: #{player.name}
+  p Position: #{player.position}
+  p Team: #{player.team}
+  ul
+  each rank in player.ranks
+    li Consensus: #{rank.consensus}
+    li Average: #{rank.average}
+    li Best: #{rank.best}
+    li Worst: #{rank.worst}
+    li Standard Deviation: #{rank.stdev}
+    br

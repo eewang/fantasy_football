@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  h1 Search for a Player
+  form(action='/search', method='get')
+    input(type='search', name='player', placeholder='Input Name')
+    input(type='submit', value='Search Now')
